@@ -1,5 +1,5 @@
 trigger OpportunityLifeCycleTrigger on Opportunity(after insert) {
   if (Trigger.isAfter && Trigger.isInsert) {
-    system.debug('TRIGGER MESSAGE ' + Trigger.new);
+    system.debug('TRIGGER MESSAGE Updated ' + Trigger.new);
   }
 }
